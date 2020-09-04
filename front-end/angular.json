@@ -124,6 +124,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Shu-Audio"
+    }
+  },
+  "defaultProject": "Shu-Audio",
+  "cli": {
+    "analytics": "f3247609-bfa0-4972-afd1-b7d4be118ba4"
+  }
 }
