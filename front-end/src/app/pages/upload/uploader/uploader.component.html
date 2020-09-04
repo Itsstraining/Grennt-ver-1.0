@@ -2,7 +2,7 @@
   <input type="text" fullWidth nbInput shape="rectangle" placeholder="Name song" [formControl]="cloudService.name" required>
   <input type="text" fullWidth nbInput shape="rectangle" placeholder="Singer" [formControl]="cloudService.singer" required>
   <input type="text" fullWidth nbInput shape="rectangle" placeholder="Artist" [formControl]="cloudService.artist" required>
-  <textarea nbInput fullWidth placeholder="Write some description" ></textarea>
+  
 </div>
 
 <app-update-image (imgFiles)="receivedImgFile($event)"></app-update-image>
