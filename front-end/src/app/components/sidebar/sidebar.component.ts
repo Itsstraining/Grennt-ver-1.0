@@ -25,11 +25,6 @@ export class SidebarComponent implements OnInit, OnDestroy {
       link: ["home"]
     },
     {
-      title: "Search",
-      icon: "search-outline",
-      link: ["search"]
-    },
-    {
       title: "Library",
       icon: "book-outline",
       link: ["library"],
@@ -80,7 +75,7 @@ export class SidebarComponent implements OnInit, OnDestroy {
         this.menuItems.forEach(item => (item.hidden = false));
       } else {
         this.menuItems.forEach(item => {
-          if (item.title === "Home" || item.title === "Search") {
+          if (item.title === "Home") {
             item.hidden = false;
           } else {
             item.hidden = true;

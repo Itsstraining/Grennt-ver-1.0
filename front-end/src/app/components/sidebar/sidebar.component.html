@@ -1,18 +1,8 @@
-<button *ngIf="!isCompact"
-        nbButton
-        ghost
-        status="danger"
-        size="tiny"
-        (click)="changeSidaBar()">
+<button *ngIf="!isCompact" nbButton ghost status="danger" size="medium" (click)="changeSidaBar()">
         <nb-icon icon="arrow-ios-forward-outline"></nb-icon>
 </button>
 
-<button *ngIf="isCompact"
-        nbButton
-        ghost
-        status="danger"
-        size="medium"
-        (click)="changeSidaBar()">
+<button *ngIf="isCompact" nbButton ghost status="danger" size="medium" (click)="changeSidaBar()">
         <nb-icon icon="arrow-ios-back-outline"></nb-icon>
 </button>
 

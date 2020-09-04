@@ -1,12 +1,15 @@
 nb-card{
-  width: 16vw;
-  height: 40vh;
+  width: 25vw;
+  height: 15vh;
+  background-color: #e8f5e9;
 
   nb-card-body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
+
 
     nb-user {
       cursor: pointer;
