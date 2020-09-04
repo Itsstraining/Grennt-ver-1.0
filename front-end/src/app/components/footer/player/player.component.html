@@ -9,41 +9,41 @@
       </nb-user>
     </div>
 
-    <div>
-      <button nbButton [disabled]="isFirstPlaying()" (click)="previous()" status="primary" class="button">
-        <nb-icon icon="skip-back-outline" status="basic"></nb-icon>
-      </button>
+  <div class="mid-item">
+<div class="mid-btn">
+  <button nbButton [disabled]="isFirstPlaying()" (click)="previous()" status="primary" class="button">
+    <nb-icon icon="skip-back-outline" status="basic"></nb-icon>
+  </button>
 
-      <button
-        nbTooltip="play"
-        nbTooltipPlacement="top"
-        nbTooltipStatus="primary"
-        nbButton (click)="play()"
-        [disabled]="state?.error"
-        *ngIf="!state?.playing"
-        class="mid"
-        status="primary"
-        shape="round">
-        <nb-icon icon="play-circle-outline" status="control"></nb-icon>
-      </button>
+  <button
+    nbTooltip="play"
+    nbTooltipPlacement="top"
+    nbTooltipStatus="primary"
+    nbButton (click)="play()"
+    [disabled]="state?.error"
+    *ngIf="!state?.playing"
+    class="mid"
+    status="primary"
+    shape="round">
+    <nb-icon icon="play-circle-outline" status="control"></nb-icon>
+  </button>
 
-      <button
-        nbTooltip="pause"
-        nbTooltipPlacement="top"
-        nbTooltipStatus="primary"
-        nbButton (click)="pause()"
-        *ngIf="state?.playing"
-        class="mid"
-        status="primary"
-        shape="round">
-        <nb-icon icon="pause-circle-outline" status="control"></nb-icon>
-      </button>
+  <button
+    nbTooltip="pause"
+    nbTooltipPlacement="top"
+    nbTooltipStatus="primary"
+    nbButton (click)="pause()"
+    *ngIf="state?.playing"
+    class="mid"
+    status="primary"
+    shape="round">
+    <nb-icon icon="pause-circle-outline" status="control"></nb-icon>
+  </button>
 
-      <button nbButton [disabled]="isLastPlaying()" (click)="next()" status="primary" class="button">
-        <nb-icon icon="skip-forward-outline" status="basic"></nb-icon>
-      </button>
-    </div>
-
+  <button nbButton [disabled]="isLastPlaying()" (click)="next()" status="primary" class="button">
+    <nb-icon icon="skip-forward-outline" status="basic"></nb-icon>
+  </button>
+</div>
     <div class="time-slider">
       {{state?.readableCurrentTime}}
       <mat-slider
@@ -58,6 +58,9 @@
       </mat-slider>
       {{state?.readableDuration}}
     </div>
+
+
+</div>
 
     <div class="volume-slider">
       <nb-icon icon="volume-up-outline" status="basic" *ngIf="audioService.audioObj.volume !== 0"></nb-icon>
