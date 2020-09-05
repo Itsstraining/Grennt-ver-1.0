@@ -31,7 +31,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to right, #3366ff, #20bdff);
+    background: linear-gradient(to right, #76ff03, #b2ff59);
   }
 
   nb-icon {
@@ -61,4 +61,8 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
+  
+}
+.btn1{
+  background: linear-gradient(to left, #76ff03, #b2ff59);
 }
