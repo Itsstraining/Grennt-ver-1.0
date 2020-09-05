@@ -1,17 +1,8 @@
 <nb-card size="tiny" class="home">
   <nb-card-body>
-    <section label="New Releases">
-      <h5>New Releases</h5>
-      <div>{{files.length}} Postions</div>
-    </section>
-    <div class="card-row" *ngIf="files" style=" display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(164px,1fr));">
-      <div class="card-col" *ngFor="let file of files">
-        <img [src]="file.imgURL" class="header-image box-shadow" (click)="openFile(file, cloudService.index)"
-          nbTooltip="Play">
-      </div>
-    </div>
 
+
+    
     <h5>List Music</h5>
     <p>{{files.length}} Postions</p>
           <nb-list listenWindowScroll="true" class="list-items" >
@@ -20,8 +11,8 @@
             </nb-list-item>
           </nb-list>
 
-    <!-- 
-    
+    <!--
+
         <nb-list listenWindowScroll="true" class="list-items">
           <nb-list-item class="tracks" *ngFor="let file of files">
             <app-track [file]="file" [tag]="file.id" [isInPlaylist]="false"></app-track>
@@ -30,7 +21,7 @@
   </nb-card-body>
 </nb-card>
 
-<!-- <nb-card size="tiny" class="home"> 
+<!-- <nb-card size="tiny" class="home">
   <nb-card-body>
     <section class="section" label="New Releases">
       New Releases
@@ -39,11 +30,11 @@
           <div class="tracks" *ngFor="let file of files">
             <app-track [file]="file" [tag]="file.id" [isInPlaylist]="false"></app-track>
           </div>
-          
+
         </div>
       </div>
 
     </section>
-    
+
   </nb-card-body>
 </nb-card> -->
