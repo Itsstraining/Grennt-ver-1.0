@@ -85,5 +85,13 @@ export class SidebarComponent implements OnInit, OnDestroy {
     });
   }
 
- 
+  changeSidaBar() {
+    if (this.isCompact === true) {
+      this.sidebarService.compact();
+      this.isCompact = false;
+    } else {
+      this.sidebarService.expand();
+      this.isCompact = true;
+    }
+  }
 }
