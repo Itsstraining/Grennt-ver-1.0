@@ -1,7 +1,7 @@
 <nb-card>
   <nb-card-body>
     <nb-user nbTooltip="Play" nbTooltipPlacement="top" nbTooltipStatus="primary"
-      (click)="openFile(file, cloudService.index)" shape="rectangle" size="medium" name={{file.name}}
+      (click)="openFile(file, cloudService.index)" shape="rectangle" size="giant" name={{file.name}}
       title={{file.singer}} picture={{file.imgURL}}>
     </nb-user>
     <div *ngIf="authService.user$ | async as user">
