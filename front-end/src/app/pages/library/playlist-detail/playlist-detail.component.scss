@@ -5,11 +5,18 @@
   margin: 0 20px;
 
   .liked-song {
+   
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to right, #3366ff, #20bdff);
+    background: linear-gradient(to right, #b6eb7a, #b2ff59);
+    
   }
+ .header {
+  font-family: 'Helvetica Neue', sans-serif !important;
+  outline: black;
+  
+ }
 
   nb-icon {
     width: 100px;
