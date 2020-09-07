@@ -50,7 +50,8 @@ export class SidebarComponent implements OnInit, OnDestroy {
     private authService: AuthService,
     private cloudService: CloudService,
     private sidebarService: NbSidebarService
-  ) {
+  )
+   {
     this.checkUserIsLogin();
   }
 
@@ -94,4 +95,7 @@ export class SidebarComponent implements OnInit, OnDestroy {
       this.isCompact = true;
     }
   }
+  
 }
+
+

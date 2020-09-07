@@ -1,11 +1,12 @@
-<nb-layout>
-    <nb-layout-header fixed subheader>
+<nb-layout responsive="true">
+    <nb-layout-header fixed>
+
         <app-header></app-header>
     </nb-layout-header>
-    <nb-sidebar>
+    <nb-sidebar tag="left" responsive="true">
         <app-sidebar></app-sidebar>
     </nb-sidebar>
-    <nb-layout-column>
+    <nb-layout-column responsive="true">
         <router-outlet></router-outlet>
     </nb-layout-column>
     <nb-layout-footer fixed>
