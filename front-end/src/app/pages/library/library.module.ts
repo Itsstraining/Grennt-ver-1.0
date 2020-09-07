@@ -14,7 +14,7 @@ import {
 } from '@nebular/theme';
 import { PlaylistDetailComponent } from './playlist-detail/playlist-detail.component';
 import { LikedSongComponent } from './liked-song/liked-song.component';
-import { HomeModule } from '../home/home.module';
+import { WebPlayerModule } from '../web-player/web-player.module';
 
 
 @NgModule({
@@ -31,7 +31,7 @@ import { HomeModule } from '../home/home.module';
     NbTabsetModule,
     NbRouteTabsetModule,
     NbIconModule,
-    HomeModule,
+    WebPlayerModule,
     NbListModule,
     NbButtonModule
   ]
