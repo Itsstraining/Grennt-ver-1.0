@@ -11,7 +11,7 @@ const routes: Routes = [
   // tslint:disable-next-line:max-line-length
   // { path: 'playlist/:id', loadChildren: () => import('./pages/playlist/playlist.module').then(m => m.PlaylistModule), canActivate: [AuthGuard] },
   { path: 'homepage', loadChildren: () => import('./pages/homepage/homepage.module').then(m => m.HomepageModule) },
-  { path: 'webplayer/:id', loadChildren: () => import('./pages/webplayer/webplayer.module').then(m => m.WebplayerModule), canActivate: [AuthGuard] },
+  { path: 'webplayer', loadChildren: () => import('./pages/webplayer/webplayer.module').then(m => m.WebplayerModule), canActivate: [AuthGuard] },
   // { path: 'webPlayer:id', loadChildren: () => import('./pages/web-player/web-player.module').then(m => m.WebPlayerModule) },
 ];
 
