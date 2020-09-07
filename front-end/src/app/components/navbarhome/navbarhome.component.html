@@ -18,7 +18,7 @@ z-index: 1;">
                     <a [routerLink]="['/homepage']" >Home</a>
                 </li>
                 <li class="active">
-                    <a [routerLink]="['/webPlayer']" >Web Player</a>
+                    <a (click)="router.navigate(['webPlayer'])" >Web Player</a>
                 </li>
             </ul>
         </div>
