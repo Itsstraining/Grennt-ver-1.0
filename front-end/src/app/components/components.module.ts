@@ -31,6 +31,7 @@ import { RouterModule } from '@angular/router';
 import { CreatePlaylistDialogComponent} from './dialog/create-playlist-dialog/create-playlist-dialog.component';
 import { FormsModule} from '@angular/forms';
 import { NavbarhomeComponent } from './navbarhome/navbarhome.component';
+import { FooterhomeComponent } from './footerhome/footerhome.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { NavbarhomeComponent } from './navbarhome/navbarhome.component';
     FooterComponent,
     PlayerComponent,
     CreatePlaylistDialogComponent,
-    NavbarhomeComponent
+    NavbarhomeComponent,
+    FooterhomeComponent
   ],
   imports: [
     CommonModule,
@@ -72,7 +74,8 @@ import { NavbarhomeComponent } from './navbarhome/navbarhome.component';
     SidebarComponent,
     FooterComponent,
     CreatePlaylistDialogComponent,
-    NavbarhomeComponent
+    NavbarhomeComponent,
+    FooterhomeComponent
   ]
 })
 export class ComponentsModule { }
