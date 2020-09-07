@@ -71,7 +71,8 @@ import { NavbarhomeComponent } from './navbarhome/navbarhome.component';
     HeaderComponent,
     SidebarComponent,
     FooterComponent,
-    CreatePlaylistDialogComponent
+    CreatePlaylistDialogComponent,
+    NavbarhomeComponent
   ]
 })
 export class ComponentsModule { }
