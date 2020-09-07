@@ -50,6 +50,10 @@ export class TrackComponent implements OnInit, OnDestroy {
     this.menuPlaylistClick().unsubscribe();
   }
 
+  play() {
+    this.audioService.play();
+  }
+
   menuPlaylistClick() {
     return this.nbMenuService.onItemClick().subscribe(x => {
       if (this.tag == x.tag)
