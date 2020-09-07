@@ -1,8 +1,13 @@
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<div class="sidebar">
-    <label for="toggle">&#9776;</label>
-    <input type="checkbox" id="toggle" />
+<div>
+    <app-logo></app-logo>
+    <button *ngIf="!isCompact" nbButton ghost status="danger" size="medium" (click)="changeSidaBar()">
+                <nb-icon icon="arrow-ios-forward-outline"></nb-icon>
+        </button>
+
+    <button *ngIf="isCompact" nbButton ghost status="danger" size="medium" (click)="changeSidaBar()">
+                <nb-icon icon="arrow-ios-back-outline"></nb-icon>
+        </button>
+
     <nb-menu [tag]="'sideBar'" [items]="menuItems">
     </nb-menu>
 </div>
