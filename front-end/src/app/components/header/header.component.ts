@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NbThemeService } from '@nebular/theme';
+import { NbThemeService,NbSidebarService } from '@nebular/theme';
 
 @Component({
   selector: 'app-header',
@@ -8,8 +8,10 @@ import { NbThemeService } from '@nebular/theme';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private sidebarService: NbSidebarService) { }
+  toggle() {
+    this.sidebarService.toggle(false, 'left');
+  }
   ngOnInit() {
   }
 }
