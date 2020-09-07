@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { SearchRoutingModule } from './search-routing.module';
 import { SearchComponent } from './search.component';
 import { NbCardModule, NbListModule } from '@nebular/theme';
-import { WebPlayerModule } from '../web-player/web-player.module';
+import { WebplayerModule } from '../webplayer/webplayer.module';
 
 
 @NgModule({
@@ -14,7 +14,7 @@ import { WebPlayerModule } from '../web-player/web-player.module';
     SearchRoutingModule,
     NbCardModule,
     NbListModule,
-    WebPlayerModule
+    WebplayerModule
   ]
 })
 export class SearchModule { }

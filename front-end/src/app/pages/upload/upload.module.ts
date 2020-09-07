@@ -18,6 +18,7 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { ReactiveFormsModule } from '@angular/forms';
 import { UploadMusicComponent } from './uploader/upload-music/upload-music.component';
 import { UpdateImageComponent } from './uploader/update-image/update-image.component';
+import { WebplayerModule } from '../webplayer/webplayer.module';
 
 
 @NgModule({
@@ -39,7 +40,8 @@ import { UpdateImageComponent } from './uploader/update-image/update-image.compo
     NbButtonModule,
     NbCardModule,
     NbInputModule,
-    NbListModule
+    NbListModule,
+    WebplayerModule
   ]
 })
 export class UploadModule { }

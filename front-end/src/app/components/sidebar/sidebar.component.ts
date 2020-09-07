@@ -14,7 +14,7 @@ export class SidebarComponent implements OnInit, OnDestroy {
     {
       title: "Liked Song",
       icon: "heart-outline",
-      link: ["library/liked-song"]
+      link: '/library/liked-song'
     }
   ];
 
@@ -22,7 +22,8 @@ export class SidebarComponent implements OnInit, OnDestroy {
     {
       title: "Home",
       icon: "home-outline",
-      link: ["home"]
+      link: '/homepage',
+      skipLocationChange: true
     },
     {
       title: "Search",
@@ -32,7 +33,7 @@ export class SidebarComponent implements OnInit, OnDestroy {
     {
       title: "Library",
       icon: "book-outline",
-      link: ["library"],
+      link: "/library",
       hidden: true
     },
     {
@@ -44,7 +45,7 @@ export class SidebarComponent implements OnInit, OnDestroy {
     {
       title: "Upload music",
       icon: "cloud-upload-outline",
-      link: ["upload"],
+      link: '/upload',
       hidden: true
     }
   ];

@@ -1,18 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { WebPlayerRoutingModule } from './web-player-routing.module';
-import { WebPlayerComponent } from './web-player.component';
+import { WebplayerRoutingModule } from './webplayer-routing.module';
+import { WebplayerComponent } from './webplayer.component';
 import { ComponentsModule } from 'src/app/components/components.module';
-import { NbLayoutModule, NbCardModule, NbUserModule, NbListModule, NbIconModule, NbTooltipModule, NbContextMenuModule, NbSidebarModule } from '@nebular/theme';
+import { NbUserModule, NbCardModule, NbListModule, NbIconModule, NbTooltipModule, NbContextMenuModule, NbLayoutModule, NbSidebarModule } from '@nebular/theme';
 import { TrackComponent } from './track/track.component';
 
 
 @NgModule({
-  declarations: [WebPlayerComponent,TrackComponent],
+  declarations: [WebplayerComponent,TrackComponent],
   imports: [
     CommonModule,
-    WebPlayerRoutingModule,
+    WebplayerRoutingModule,
     ComponentsModule,
     NbCardModule,
     NbUserModule,
@@ -27,4 +27,4 @@ import { TrackComponent } from './track/track.component';
     TrackComponent
   ]
 })
-export class WebPlayerModule { }
+export class WebplayerModule { }

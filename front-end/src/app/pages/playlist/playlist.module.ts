@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { PlaylistRoutingModule } from './playlist-routing.module';
 import { PlaylistComponent } from './playlist.component';
 import { NbListModule, NbCardModule, NbIconModule, NbButtonModule } from '@nebular/theme';
-import { WebPlayerModule } from '../web-player/web-player.module';
+import { WebplayerModule } from '../webplayer/webplayer.module';
 
 
 @NgModule({
@@ -16,7 +16,7 @@ import { WebPlayerModule } from '../web-player/web-player.module';
     NbListModule,
     NbButtonModule,
     NbIconModule,
-    WebPlayerModule
+    WebplayerModule
   ]
 })
 export class PlaylistModule { }

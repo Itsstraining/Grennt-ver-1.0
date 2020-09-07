@@ -3,11 +3,12 @@ import { CloudService } from 'src/app/services/cloud.service';
 import { AudioService } from 'src/app/services/audio.service';
 
 @Component({
-  selector: 'app-web-player',
-  templateUrl: './web-player.component.html',
-  styleUrls: ['./web-player.component.scss']
+  selector: 'app-webplayer',
+  templateUrl: './webplayer.component.html',
+  styleUrls: ['./webplayer.component.scss']
 })
-export class WebPlayerComponent implements OnInit {
+export class WebplayerComponent implements OnInit {
+
   files: Array<any> = [];
   headerFiles: Array<any> = [];
 

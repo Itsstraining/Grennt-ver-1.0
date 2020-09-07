@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { WebPlayerComponent } from './web-player.component';
+import { WebplayerComponent } from './webplayer.component';
 
-const routes: Routes = [{ path: '', component: WebPlayerComponent }];
+const routes: Routes = [{ path: '', component: WebplayerComponent }];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class WebPlayerRoutingModule { }
+export class WebplayerRoutingModule { }

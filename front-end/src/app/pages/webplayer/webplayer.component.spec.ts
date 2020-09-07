@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { WebPlayerComponent } from './web-player.component';
+import { WebplayerComponent } from './webplayer.component';
 
-describe('WebPlayerComponent', () => {
-  let component: WebPlayerComponent;
-  let fixture: ComponentFixture<WebPlayerComponent>;
+describe('WebplayerComponent', () => {
+  let component: WebplayerComponent;
+  let fixture: ComponentFixture<WebplayerComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ WebPlayerComponent ]
+      declarations: [ WebplayerComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(WebPlayerComponent);
+    fixture = TestBed.createComponent(WebplayerComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
