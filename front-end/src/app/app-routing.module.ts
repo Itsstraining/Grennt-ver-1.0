@@ -11,6 +11,7 @@ const routes: Routes = [
   { path: 'search', loadChildren: () => import('./pages/search/search.module').then(m => m.SearchModule) },
   // tslint:disable-next-line:max-line-length
   { path: 'playlist/:id', loadChildren: () => import('./pages/playlist/playlist.module').then(m => m.PlaylistModule), canActivate: [AuthGuard] },
+  { path: 'homepage', loadChildren: () => import('./pages/homepage/homepage.module').then(m => m.HomepageModule) },
 ];
 
 @NgModule({

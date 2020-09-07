@@ -10,8 +10,11 @@ import {
   NbListModule,
   NbIconModule,
   NbTooltipModule,
-  NbContextMenuModule
+  NbContextMenuModule,
+  NbLayoutModule,
+  NbSidebarModule
 } from '@nebular/theme';
+import { ComponentsModule } from 'src/app/components/components.module';
 
 
 @NgModule({
@@ -24,7 +27,10 @@ import {
     NbListModule,
     NbIconModule,
     NbTooltipModule,
-    NbContextMenuModule
+    NbContextMenuModule,
+    NbLayoutModule,
+    NbSidebarModule,
+    ComponentsModule
   ],
   exports: [TrackComponent]
 })
