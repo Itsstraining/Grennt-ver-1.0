@@ -21,6 +21,7 @@ import {
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 import { ComponentsModule } from './components/components.module';
 import { environment } from 'src/environments/environment';
+import { HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { environment } from 'src/environments/environment';
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
     AngularFireAuthModule,
-    NbInputModule
+    NbInputModule,
+    HttpClientModule
   ],
   providers: [NbSidebarService, NbToastrService],
   bootstrap: [AppComponent]

@@ -30,6 +30,8 @@ import { MatSliderModule } from '@angular/material/slider';
 import { RouterModule } from '@angular/router';
 import { CreatePlaylistDialogComponent} from './dialog/create-playlist-dialog/create-playlist-dialog.component';
 import { FormsModule} from '@angular/forms';
+import { NavbarhomeComponent } from './navbarhome/navbarhome.component';
+import { FooterhomeComponent } from './footerhome/footerhome.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +44,9 @@ import { FormsModule} from '@angular/forms';
     LoginDialogComponent,
     FooterComponent,
     PlayerComponent,
-    CreatePlaylistDialogComponent
+    CreatePlaylistDialogComponent,
+    NavbarhomeComponent,
+    FooterhomeComponent
   ],
   imports: [
     CommonModule,
@@ -69,7 +73,9 @@ import { FormsModule} from '@angular/forms';
     HeaderComponent,
     SidebarComponent,
     FooterComponent,
-    CreatePlaylistDialogComponent
+    CreatePlaylistDialogComponent,
+    NavbarhomeComponent,
+    FooterhomeComponent
   ]
 })
 export class ComponentsModule { }

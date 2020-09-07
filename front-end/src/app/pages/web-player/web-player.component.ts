@@ -1,13 +1,13 @@
-import { Component, OnInit, OnDestroy  } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CloudService } from 'src/app/services/cloud.service';
 import { AudioService } from 'src/app/services/audio.service';
-@Component({
-  selector: 'app-album-detail',
-  templateUrl: './album-detail.component.html',
-  styleUrls: ['./album-detail.component.scss']
-})
-export class AlbumDetailComponent implements OnInit {
 
+@Component({
+  selector: 'app-web-player',
+  templateUrl: './web-player.component.html',
+  styleUrls: ['./web-player.component.scss']
+})
+export class WebPlayerComponent implements OnInit {
   files: Array<any> = [];
   headerFiles: Array<any> = [];
 
@@ -48,6 +48,8 @@ export class AlbumDetailComponent implements OnInit {
     });
   }
 
+
+  
   playStream(url) {
     this.audioService.playStream(url).subscribe(events => {
       // listening for fun here
