@@ -1,0 +1,25 @@
+<nb-layout>
+    <nb-layout-header fixed subheader>
+      <app-header></app-header>
+    </nb-layout-header>
+    <nb-sidebar reponsive = true>
+      <app-sidebar></app-sidebar>
+    </nb-sidebar>
+    <nb-layout-column>
+      <nb-card size="tiny" class="home">
+        <nb-card-body>
+          <h5>List Music</h5>
+          <p>{{files.length}} Postions</p>
+                <nb-list listenWindowScroll="true" class="list-items" >
+                  <nb-list-item class="tracks" *ngFor="let file of files">
+                     <app-track [file]="file" [tag]="file.id" [isInPlaylist]="false"></app-track>
+                  </nb-list-item>
+                </nb-list>
+        </nb-card-body>
+      </nb-card>
+    </nb-layout-column>
+    <nb-layout-footer fixed>
+      <app-footer></app-footer>
+    </nb-layout-footer>
+  
+  </nb-layout>

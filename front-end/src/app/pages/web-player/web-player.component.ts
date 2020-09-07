@@ -1,14 +1,13 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CloudService } from 'src/app/services/cloud.service';
 import { AudioService } from 'src/app/services/audio.service';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  selector: 'app-web-player',
+  templateUrl: './web-player.component.html',
+  styleUrls: ['./web-player.component.scss']
 })
-export class HomeComponent implements OnInit, OnDestroy {
-
+export class WebPlayerComponent implements OnInit {
   files: Array<any> = [];
   headerFiles: Array<any> = [];
 
