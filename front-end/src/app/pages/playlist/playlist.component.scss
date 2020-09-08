@@ -1,32 +1,43 @@
+.liked-song-page {
+  width: 100%;
+  min-height: 100%;
+}
+
+h1 {
+  text-align: center;
+}
+
+.list-items {
+  width: 100%;
+
+  .tracks {
+    border: none !important;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+
+    app-track {
+      width: 100%;
+    }
+  }
+}
+
 .playlist-detail {
-  width: 15%;
+  width: 100%;
   cursor: pointer;
   outline: none !important;
-  margin: 0 20px;
 
   .liked-song {
-
     display: flex;
     justify-content: center;
     align-items: center;
-    // background: linear-gradient(to right, #b6eb7a, #b2ff59);
-    background-color: #0F9D58;
-
+    background: #0F9D58;
   }
- .header {
-  font-family: 'Helvetica Neue', sans-serif !important;
-
-
- }
 
   nb-icon {
     width: 100px;
     height: 100px;
     color: white;
-  }
-
-  nb-card-header {
-    text-align: center;
   }
 }
 
@@ -39,10 +50,21 @@
   }
 }
 
-.contain {
+hr {
+  flex: 1;
+  border: none;
+  height: 2px;
+  background: black
+}
+
+.btn2{
+  background: #0F9D58;
+}
+
+.sec-div {
   display: flex;
-  justify-content: flex-start;
-  margin: 0 -20px;
+  justify-content: center;
+  align-items: center;
 }
 
 
