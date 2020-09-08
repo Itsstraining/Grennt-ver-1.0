@@ -1,3 +1,4 @@
+import { PlayerComponent } from './../../components/footer/player/player.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -50,7 +51,6 @@ import { SearchComponent } from './search/search.component'
     NbButtonModule,
     NbCardModule,
     NbListModule,
-    WebplayerModule,
     ComponentsModule,
     NbSidebarModule,
     ReactiveFormsModule,
@@ -59,12 +59,21 @@ import { SearchComponent } from './search/search.component'
     NbTabsetModule,
     NbRouteTabsetModule,
     NbIconModule,
-    WebplayerModule,
     NbListModule,
     ComponentsModule,
   ],
   exports: [
-    TrackComponent
+    TrackComponent,
+    UpdateImageComponent,
+    UploadComponent,
+    UploadMusicComponent,
+    UploadTaskComponent,
+    UploaderComponent,
+    PlaylistComponent,
+    PlaylistDetailComponent,
+    LikedSongComponent,
+    LibraryComponent,
+    SearchComponent
   ]
 })
 export class WebplayerModule { }
