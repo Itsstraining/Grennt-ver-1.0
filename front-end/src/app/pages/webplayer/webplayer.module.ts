@@ -6,7 +6,7 @@ import { CommonModule } from '@angular/common';
 import { WebplayerRoutingModule } from './webplayer-routing.module';
 import { WebplayerComponent } from './webplayer.component';
 import { ComponentsModule } from 'src/app/components/components.module';
-import { NbUserModule, NbCardModule, NbListModule, NbIconModule, NbTooltipModule, NbContextMenuModule, NbLayoutModule, NbSidebarModule, NbProgressBarModule, NbButtonModule, NbTableModule, NbTabsetModule, NbRouteTabsetModule } from '@nebular/theme';
+import { NbUserModule, NbCardModule, NbListModule, NbIconModule, NbTooltipModule, NbContextMenuModule, NbLayoutModule, NbSidebarModule, NbProgressBarModule, NbButtonModule, NbTableModule, NbTabsetModule, NbRouteTabsetModule, NbInputModule } from '@nebular/theme';
 import { TrackComponent } from './track/track.component';
 import { PlaylistComponent } from './playlist/playlist.component';
 import { UploadTaskComponent } from './upload-grenny/upload-task/upload-task.component';
@@ -61,6 +61,7 @@ import { SearchComponent } from './search/search.component'
     NbIconModule,
     NbListModule,
     ComponentsModule,
+    NbInputModule
   ],
   exports: [
     TrackComponent,
