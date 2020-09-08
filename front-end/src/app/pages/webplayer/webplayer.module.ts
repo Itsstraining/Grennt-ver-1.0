@@ -8,11 +8,11 @@ import { ComponentsModule } from 'src/app/components/components.module';
 import { NbUserModule, NbCardModule, NbListModule, NbIconModule, NbTooltipModule, NbContextMenuModule, NbLayoutModule, NbSidebarModule, NbProgressBarModule, NbButtonModule } from '@nebular/theme';
 import { TrackComponent } from './track/track.component';
 import { PlaylistComponent } from './playlist/playlist.component';
-import { UploadTaskComponent } from './upload-task/upload-task.component';
-import { UpdateImageComponent } from './update-image/update-image.component';
-import { UploadMusicComponent } from './upload-music/upload-music.component';
-import { UploaderComponent } from './uploader/uploader.component';
-import { UploadComponent } from './upload/upload.component';
+import { UploadTaskComponent } from './upload-grenny/upload-task/upload-task.component';
+import { UpdateImageComponent } from './upload-grenny/update-image/update-image.component';
+import { UploadMusicComponent } from './upload-grenny/upload-music/upload-music.component';
+import { UploaderComponent } from './upload-grenny/uploader/uploader.component';
+import { UploadComponent } from './upload-grenny/upload/upload.component';
 
 
 @NgModule({
