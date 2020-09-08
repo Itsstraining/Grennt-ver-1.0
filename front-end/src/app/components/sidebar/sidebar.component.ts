@@ -26,11 +26,6 @@ export class SidebarComponent implements OnInit, OnDestroy {
       skipLocationChange: true
     },
     {
-      title: "Search",
-      icon: "search-outline",
-      link: ["search"]
-    },
-    {
       title: "Library",
       icon: "book-outline",
       link: ["library"],

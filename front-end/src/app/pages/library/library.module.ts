@@ -10,11 +10,14 @@ import {
   NbRouteTabsetModule,
   NbIconModule,
   NbListModule,
-  NbButtonModule
+  NbButtonModule,
+  NbLayoutModule,
+  NbSidebarModule,
 } from '@nebular/theme';
 import { PlaylistDetailComponent } from './playlist-detail/playlist-detail.component';
 import { LikedSongComponent } from './liked-song/liked-song.component';
 import { WebplayerModule } from '../webplayer/webplayer.module';
+import { ComponentsModule } from 'src/app/components/components.module';
 
 
 
@@ -34,7 +37,10 @@ import { WebplayerModule } from '../webplayer/webplayer.module';
     NbIconModule,
     WebplayerModule,
     NbListModule,
-    NbButtonModule
+    NbButtonModule,
+    NbLayoutModule,
+    ComponentsModule,
+    NbSidebarModule
   ]
 })
 export class LibraryModule { }
