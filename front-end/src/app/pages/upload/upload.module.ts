@@ -1,3 +1,4 @@
+import { ComponentsModule } from 'src/app/components/components.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -11,7 +12,9 @@ import {
   NbButtonModule,
   NbCardModule,
   NbInputModule,
-  NbListModule
+  NbListModule,
+  NbLayoutModule,
+  NbSidebarModule
 } from '@nebular/theme';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
@@ -41,7 +44,10 @@ import { WebplayerModule } from '../webplayer/webplayer.module';
     NbCardModule,
     NbInputModule,
     NbListModule,
-    WebplayerModule
+    WebplayerModule,
+    NbLayoutModule,
+    ComponentsModule,
+    NbSidebarModule
   ]
 })
 export class UploadModule { }

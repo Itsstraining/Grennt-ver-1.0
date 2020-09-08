@@ -1,9 +1,17 @@
+import { UploadComponent } from './../upload/upload.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { WebplayerComponent } from './webplayer.component';
+import { AuthGuard } from 'src/app/guards/auth.guard';
 
-const routes: Routes = [{ path: '', component: WebplayerComponent }];
+const routes: Routes = [
+  { path: '', component: WebplayerComponent },
+  { path: 'upload', loadChildren: () => import('../upload/upload.module').then(m => m.UploadModule), canActivate: [AuthGuard] },
+  { path: 'library', loadChildren: () => import('../library/library.module').then(m => m.LibraryModule), canActivate: [AuthGuard] },
+  { path: 'search', loadChildren: () => import('../search/search.module').then(m => m.SearchModule) },
+  { path: 'playlist/:id', loadChildren: () => import('../playlist/playlist.module').then(m => m.PlaylistModule), canActivate: [AuthGuard] },
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
