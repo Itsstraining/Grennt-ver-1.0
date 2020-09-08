@@ -15,7 +15,8 @@ import { UploaderComponent } from './upload-grenny/uploader/uploader.component';
 import { UploadComponent } from './upload-grenny/upload/upload.component';
 import { LibraryComponent } from './library-grenny/library/library.component';
 import { PlaylistDetailComponent} from './library-grenny/playlist-detail/playlist-detail.component'
-import { LikedSongComponent} from './library-grenny/liked-song/liked-song.component'
+import { LikedSongComponent} from './library-grenny/liked-song/liked-song.component';
+import { SearchComponent } from './search/search.component'
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { LikedSongComponent} from './library-grenny/liked-song/liked-song.compon
     UploadComponent,
     LibraryComponent,
     PlaylistDetailComponent,
-    LikedSongComponent
+    LikedSongComponent,
+    SearchComponent
   ],
   imports: [
     CommonModule,

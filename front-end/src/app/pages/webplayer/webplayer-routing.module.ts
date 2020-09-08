@@ -7,10 +7,12 @@ import { AuthGuard } from 'src/app/guards/auth.guard';
 
 const routes: Routes = [
   { path: '', component: WebplayerComponent },
-  { path: 'upload', loadChildren: () => import('../upload/upload.module').then(m => m.UploadModule), canActivate: [AuthGuard] },
-  { path: 'library', loadChildren: () => import('../library/library.module').then(m => m.LibraryModule), canActivate: [AuthGuard] },
-  { path: 'search', loadChildren: () => import('../search/search.module').then(m => m.SearchModule) },
-  { path: 'playlist/:id', loadChildren: () => import('../playlist/playlist.module').then(m => m.PlaylistModule), canActivate: [AuthGuard] },
+  // { path: 'upload', loadChildren: () => import('../upload/upload.module').then(m => m.UploadModule), canActivate: [AuthGuard] },
+  // { path: 'library', loadChildren: () => import('../library/library.module').then(m => m.LibraryModule), canActivate: [AuthGuard] },
+  // { path: 'playlist/:id', loadChildren: () => import('../playlist/playlist.module').then(m => m.PlaylistModule), canActivate: [AuthGuard] },
+  {
+    path:'upload', component: UploadComponent
+  },
 ];
 
 @NgModule({
