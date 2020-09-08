@@ -1,3 +1,4 @@
+import { UploadTaskComponent } from './pages/webplayer/upload-grenny/upload-task/upload-task.component';
 import { WebplayerModule } from './pages/webplayer/webplayer.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';

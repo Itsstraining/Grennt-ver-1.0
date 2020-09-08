@@ -8,7 +8,7 @@
 <app-update-image (imgFiles)="receivedImgFile($event)"></app-update-image>
 <app-upload-music (musicFiles)="receivedMusicFile($event)"></app-upload-music>
 
-<h3 routerLink="/home">Uploads</h3>
+<h3 routerLink="/webplayer">Uploads</h3>
 <div *ngFor="let musicFile of musicFiles">
   <div *ngFor="let imgFile of imgFiles">
     <app-upload-task
