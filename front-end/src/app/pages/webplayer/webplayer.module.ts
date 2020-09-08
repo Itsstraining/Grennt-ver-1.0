@@ -1,3 +1,4 @@
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -10,10 +11,12 @@ import { PlaylistComponent } from './playlist/playlist.component';
 import { UploadTaskComponent } from './upload-task/upload-task.component';
 import { UpdateImageComponent } from './update-image/update-image.component';
 import { UploadMusicComponent } from './upload-music/upload-music.component';
+import { UploaderComponent } from './uploader/uploader.component';
+import { UploadComponent } from './upload/upload.component';
 
 
 @NgModule({
-  declarations: [WebplayerComponent,TrackComponent, PlaylistComponent, UploadTaskComponent, UpdateImageComponent, UploadMusicComponent],
+  declarations: [WebplayerComponent,TrackComponent, PlaylistComponent, UploadTaskComponent, UpdateImageComponent, UploadMusicComponent, UploaderComponent, UploadComponent],
   imports: [
     CommonModule,
     WebplayerRoutingModule,
@@ -34,7 +37,8 @@ import { UploadMusicComponent } from './upload-music/upload-music.component';
     WebplayerModule,
     NbLayoutModule,
     ComponentsModule,
-    NbSidebarModule
+    NbSidebarModule,
+    ReactiveFormsModule,
   ],
   exports: [
     TrackComponent
