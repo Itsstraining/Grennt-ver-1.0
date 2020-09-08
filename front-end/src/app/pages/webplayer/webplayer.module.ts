@@ -8,10 +8,12 @@ import { NbUserModule, NbCardModule, NbListModule, NbIconModule, NbTooltipModule
 import { TrackComponent } from './track/track.component';
 import { PlaylistComponent } from './playlist/playlist.component';
 import { UploadTaskComponent } from './upload-task/upload-task.component';
+import { UpdateImageComponent } from './update-image/update-image.component';
+import { UploadMusicComponent } from './upload-music/upload-music.component';
 
 
 @NgModule({
-  declarations: [WebplayerComponent,TrackComponent, PlaylistComponent, UploadTaskComponent],
+  declarations: [WebplayerComponent,TrackComponent, PlaylistComponent, UploadTaskComponent, UpdateImageComponent, UploadMusicComponent],
   imports: [
     CommonModule,
     WebplayerRoutingModule,
