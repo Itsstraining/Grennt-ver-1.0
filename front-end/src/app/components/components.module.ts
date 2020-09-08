@@ -1,4 +1,3 @@
-import { WebplayerModule } from './../pages/webplayer/webplayer.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './header/header.component';
@@ -31,8 +30,6 @@ import { MatSliderModule } from '@angular/material/slider';
 import { RouterModule } from '@angular/router';
 import { CreatePlaylistDialogComponent} from './dialog/create-playlist-dialog/create-playlist-dialog.component';
 import { FormsModule} from '@angular/forms';
-
-
 @NgModule({
   declarations: [
     HeaderComponent,
