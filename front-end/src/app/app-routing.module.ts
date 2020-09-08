@@ -9,7 +9,6 @@ const routes: Routes = [
   { path: 'playlist', loadChildren: () => import('./pages/playlist/playlist.module').then(m => m.PlaylistModule) },
   { path: 'search', loadChildren: () => import('./pages/search/search.module').then(m => m.SearchModule) },
   { path: 'upload', loadChildren: () => import('./pages/upload/upload.module').then(m => m.UploadModule) },
-  { path: 'updateImage', loadChildren: () => import('./pages/upload/update-image/update-image.module').then(m => m.UpdateImageModule) }
 
 ];
 
