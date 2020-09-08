@@ -22,7 +22,7 @@ export class SidebarComponent implements OnInit, OnDestroy {
     {
       title: "Home",
       icon: "home-outline",
-      link: '/',
+      link: ['/webplayer'],
       skipLocationChange: true
     },
     {
