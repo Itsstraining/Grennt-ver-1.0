@@ -68,18 +68,6 @@ export class TrackComponent implements OnInit, OnDestroy {
                   data.Song.push(this.file);
                   await this.cloudService
                     .addSongToPlaylist(this.user, data, data.title);
-                //     .then(() => {
-                //       this.toater.show("Thêm thành công", "Thông báo", {
-                //         status: "success"
-                //       });
-                //     })
-                //     .catch(err => {
-                //       console.log(err.message);
-                //     });
-                // } else {
-                //   this.toater.show("Playlist đã tồn tại bài này", "Thông báo", {
-                //     status: "warning"
-                //   });
                 }
               }
             });
