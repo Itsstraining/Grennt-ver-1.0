@@ -13,8 +13,6 @@ import {
   NbButtonModule
 } from '@nebular/theme';
 import { PlaylistDetailComponent } from './playlist-detail/playlist-detail.component';
-import { AlbumDetailComponent } from './album-detail/album-detail.component';
-import { ArtistDetailComponent } from './artist-detail/artist-detail.component';
 import { LikedSongComponent } from './liked-song/liked-song.component';
 import { HomeModule } from '../home/home.module';
 
@@ -23,8 +21,6 @@ import { HomeModule } from '../home/home.module';
   declarations: [
     LibraryComponent,
     PlaylistDetailComponent,
-    AlbumDetailComponent,
-    ArtistDetailComponent,
     LikedSongComponent
   ],
   imports: [
