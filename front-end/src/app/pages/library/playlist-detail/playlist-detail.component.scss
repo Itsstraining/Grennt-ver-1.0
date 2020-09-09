@@ -32,7 +32,9 @@
 }
 
 .contain {
-  display: flex;
-  justify-content: flex-start;
+  display: -webkit-box;
+  -webkit-box-pack: start;
+  // display: flex;
+  // justify-content: flex-start;
   margin: 0 -20px;
 }
