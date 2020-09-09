@@ -1,9 +1,10 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { AngularFireStorage, AngularFireUploadTask } from '@angular/fire/storage';
+import { AngularFirestore } from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
-import { CloudService } from 'src/app/services/cloud.service';
-import { tap, finalize } from 'rxjs/operators';
+import { finalize, tap } from 'rxjs/operators';
 import { MusicData } from 'src/app/models/music-data.model';
-import { AngularFireUploadTask, AngularFireStorage } from '@angular/fire/storage';
+import { CloudService } from 'src/app/services/cloud.service';
 
 @Component({
   selector: 'app-upload-task',

@@ -1,16 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import * as core from '@angular/core';
 import { NbDialogService } from '@nebular/theme';
+import { CreatePlaylistDialogComponent } from 'src/app/components/dialog/create-playlist-dialog/create-playlist-dialog.component';
 import { AuthService } from 'src/app/services/auth.service';
 import { CloudService } from 'src/app/services/cloud.service';
-import { CreatePlaylistDialogComponent } from 'src/app/components/dialog/create-playlist-dialog/create-playlist-dialog.component';
 
-@Component({
+@core.Component({
   selector: 'app-playlist-detail',
   templateUrl: './playlist-detail.component.html',
   styleUrls: ['./playlist-detail.component.scss']
 })
-export class PlaylistDetailComponent implements OnInit {
-
+export class PlaylistDetailComponent implements core.OnInit {
   constructor(
     private dialog: NbDialogService,
     private auth: AuthService,
@@ -35,6 +34,4 @@ export class PlaylistDetailComponent implements OnInit {
       context: 'ahhihi'
     });
   }
-
-
 }

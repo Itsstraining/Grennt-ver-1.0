@@ -21,12 +21,10 @@
         border: 2px solid black;
         color: #dadada !important;
     }
-    @media only screen and (max-width: 600px)  {
-      .file-label {
-      font-size: 1.2em;
-      }
-    }
 
+    .file-label {
+      font-size: 1.2em;
+    }
   }
 }
 

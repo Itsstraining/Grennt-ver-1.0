@@ -1,16 +1,16 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { AudioService } from 'src/app/services/audio.service';
-import { CloudService } from 'src/app/services/cloud.service';
-import { AuthService } from 'src/app/services/auth.service';
-import { NbMenuService, NbToastrService } from '@nebular/theme';
+import { Component, OnInit, Input, OnDestroy } from "@angular/core";
+import { AudioService } from "src/app/services/audio.service";
+import { CloudService } from "src/app/services/cloud.service";
+import { AuthService } from "src/app/services/auth.service";
+import { NbMenuService, NbToastrService } from "@nebular/theme";
+import { filter, map } from "rxjs/operators";
 
 @Component({
-  selector: 'app-track',
-  templateUrl: './track.component.html',
-  styleUrls: ['./track.component.scss']
+  selector: "app-track",
+  templateUrl: "./track.component.html",
+  styleUrls: ["./track.component.scss"]
 })
-export class TrackComponent implements OnInit {
-
+export class TrackComponent implements OnInit, OnDestroy {
   @Input() file;
   likedSongFile: Array<any> = [];
   likedSongId: Array<any> = [];
@@ -187,5 +187,4 @@ export class TrackComponent implements OnInit {
       }
     }
   }
-
 }

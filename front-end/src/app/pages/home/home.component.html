@@ -1,11 +1,22 @@
 <nb-card size="tiny" class="home">
   <nb-card-body>
-      <h5>List Music</h5>
-      <p>{{files.length}} Postions</p>
-      <nb-list listenWindowScroll="true" class="list-items">
-          <nb-list-item class="tracks" *ngFor="let file of files">
-              <app-track [file]="file" [tag]="file.id" [isInPlaylist]="false"></app-track>
-          </nb-list-item>
-      </nb-list>
+    <h5>New Releases</h5>
+    <p>{{files.length}} Postions</p>
+
+    <div class="card-row">
+      <div class="card-col" *ngFor="let file of headerFiles">
+        <img [src]="file.imgURL" class="header-image box-shadow" (click)="openFile(file, cloudService.index)">
+      </div>
+    </div>
+
+    <h5>New Played</h5>
+    <p>{{files.length}} Postions</p>
+
+    <nb-list listenWindowScroll="true" class="list-items">
+      <nb-list-item class="tracks" *ngFor="let file of files">
+        <app-track [file]="file" [tag]="file.id" [isInPlaylist]="false"></app-track>
+      </nb-list-item>
+    </nb-list>
+
   </nb-card-body>
 </nb-card>

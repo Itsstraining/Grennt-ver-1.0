@@ -1,44 +1,34 @@
-nb-card{
-  width: 25vw;
-  height: 15vh;
+nb-card-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 
+  nb-user {
+    cursor: pointer;
+  }
 
-  nb-card-body {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  nb-icon {
+    cursor: pointer;
+    margin-right: 10px;
 
-
-
-    nb-user {
-      cursor: pointer;
+    &:hover {
+      color: #3366ff;
     }
+  }
 
-    nb-icon {
-      cursor: pointer;
-      margin-right: 10px;
+  .add-to-liked-song:hover {
+    color: red;
+  }
 
-      &:hover {
-        color: #3366ff;
-      }
-    }
+  .remove-of-liked-song {
+    color: red;
 
-    .add-to-liked-song:hover {
+    &:hover {
       color: red;
-    }
-
-    .remove-of-liked-song {
-      color: red;
-
-      &:hover {
-        color: red;
-      }
     }
   }
 }
-
-
 
 nb-card-body:hover {
   box-shadow: 0 .5rem 1rem 0 rgba(44, 51, 73, 0.5);

@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { PlaylistRoutingModule } from './playlist-routing.module';
 import { PlaylistComponent } from './playlist.component';
-import { NbCardModule, NbListModule, NbButtonModule, NbIconModule } from '@nebular/theme';
+import { NbListModule, NbCardModule, NbIconModule, NbButtonModule } from '@nebular/theme';
 import { HomeModule } from '../home/home.module';
 
 

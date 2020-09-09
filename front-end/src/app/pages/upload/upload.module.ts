@@ -2,20 +2,35 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { UploadRoutingModule } from './upload-routing.module';
-import { UploadComponent } from './upload.component';
-import { UploaderComponent } from './uploader/uploader.component';
-import { UpdateImageComponent } from './uploader/update-image/update-image.component';
-import { UploadMusicComponent } from './uploader/upload-music/upload-music.component';
 import { UploadTaskComponent } from './upload-task/upload-task.component';
+import { UploaderComponent } from './uploader/uploader.component';
+import { UploadComponent } from './upload.component';
+import { DropzoneDirective } from 'src/app/directives/dropzone.directive';
+import {
+  NbProgressBarModule,
+  NbButtonModule,
+  NbCardModule,
+  NbInputModule,
+  NbListModule
+} from '@nebular/theme';
+import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { ReactiveFormsModule } from '@angular/forms';
-import { NbProgressBarModule, NbCardModule, NbButtonModule, NbInputModule, NbListModule } from '@nebular/theme';
-import { AngularFireStorageModule } from '@angular/fire/storage';
+import { UploadMusicComponent } from './uploader/upload-music/upload-music.component';
+import { UpdateImageComponent } from './uploader/update-image/update-image.component';
+
+
 @NgModule({
-  declarations: [UploadComponent, UploaderComponent, UpdateImageComponent, UploadMusicComponent, UploadTaskComponent],
+  declarations: [
+    UploadComponent,
+    UploadTaskComponent,
+    UploaderComponent,
+    DropzoneDirective,
+    UploadMusicComponent,
+    UpdateImageComponent
+  ],
   imports: [
     CommonModule,
-    UploadRoutingModule,
     AngularFirestoreModule,
     AngularFireStorageModule,
     ReactiveFormsModule,

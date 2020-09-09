@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthService } from 'src/app/services/auth.service';
-import { CloudService } from 'src/app/services/cloud.service';
-import { Router, ActivatedRoute } from '@angular/router';
-import { map } from 'rxjs/operators';
+import { Router, ActivatedRoute, ParamMap } from '@angular/router';
+import { switchMap, map } from 'rxjs/operators';
+import { CloudService } from '../../services/cloud.service';
+import { AuthService } from '../../services/auth.service';
 
 @Component({
   selector: 'app-playlist',
@@ -10,7 +10,6 @@ import { map } from 'rxjs/operators';
   styleUrls: ['./playlist.component.scss']
 })
 export class PlaylistComponent implements OnInit {
-
   playlist;
   selectedId;
   constructor(
@@ -35,5 +34,4 @@ export class PlaylistComponent implements OnInit {
       });
     });
   }
-
 }

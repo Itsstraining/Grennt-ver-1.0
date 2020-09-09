@@ -4,7 +4,14 @@ import { CommonModule } from '@angular/common';
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
 import { TrackComponent } from './track/track.component';
-import { NbCardModule, NbUserModule, NbListModule, NbIconModule, NbTooltipModule, NbContextMenuModule } from '@nebular/theme';
+import {
+  NbCardModule,
+  NbUserModule,
+  NbListModule,
+  NbIconModule,
+  NbTooltipModule,
+  NbContextMenuModule
+} from '@nebular/theme';
 
 
 @NgModule({
@@ -19,8 +26,6 @@ import { NbCardModule, NbUserModule, NbListModule, NbIconModule, NbTooltipModule
     NbTooltipModule,
     NbContextMenuModule
   ],
-  exports: [
-    TrackComponent
-  ]
+  exports: [TrackComponent]
 })
 export class HomeModule { }
